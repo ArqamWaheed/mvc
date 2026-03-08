@@ -173,6 +173,68 @@
       font-weight: bold;
     }
 
+    /* Hard Variations */
+    .hard-banner {
+      background: linear-gradient(135deg, #7c2d12, #ea580c);
+      border-radius: 12px;
+      padding: 20px 30px;
+      margin: 40px 0 30px;
+      text-align: center;
+      border: 2px solid #f97316;
+    }
+
+    .hard-banner h2 {
+      font-size: 1.8rem;
+      color: #fff7ed;
+      letter-spacing: 0.05em;
+    }
+
+    .hard-banner p {
+      color: #fed7aa;
+      margin-top: 6px;
+      font-size: 0.95rem;
+    }
+
+    .topic.hard {
+      border-color: #9a3412;
+    }
+
+    .topic.hard h2 {
+      color: #fb923c;
+      border-bottom-color: #9a3412;
+    }
+
+    .question.hard-q {
+      border-left-color: #f97316;
+    }
+
+    .question.hard-q h3 {
+      color: #fdba74;
+    }
+
+    .hard-separator {
+      border: none;
+      border-top: 2px dashed #334155;
+      margin: 50px 0;
+    }
+
+    /* Hard Answer Keys */
+    .answer-topic.hard {
+      border-color: #9a3412;
+    }
+
+    .answer-topic.hard h2 {
+      color: #fb923c;
+    }
+
+    .answer.hard-a {
+      border-left-color: #f97316;
+    }
+
+    .answer.hard-a h3 {
+      color: #fdba74;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -743,6 +805,140 @@
     </section>
 
     <!-- ═══════════════════════════════════════════ -->
+    <!-- HARD VARIATIONS -->
+    <!-- ═══════════════════════════════════════════ -->
+    <hr class="hard-separator" />
+
+    <div class="hard-banner">
+      <h2>⚡ Hard Variations — 2× Difficulty</h2>
+      <p>Topics 3, 4 &amp; 5 — Extended challenge problems</p>
+    </div>
+
+    <!-- HARD TOPIC 3 -->
+    <section class="topic hard">
+      <h2>Hard Topic 3 — Directional Derivatives &amp; Gradient</h2>
+
+      <div class="question hard-q">
+        <h3>Question 1 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q2)</span></h3>
+        <p>Let \( f(x,y) = e^x \sin y + x^2 y \).</p>
+        <ol class="tasks">
+          <li>Find the directional derivative at \(\left(0,\,\dfrac{\pi}{2}\right)\) in the direction from that point toward \(\left(3,\,\dfrac{\pi}{2}+4\right)\).</li>
+          <li>Find the maximum rate of change at that point and the unit vector in which it occurs.</li>
+          <li>Find all unit vectors \(\mathbf{u}\) such that \(D_{\mathbf{u}}f = 0\) at that point, and explain geometrically what they represent.</li>
+        </ol>
+      </div>
+
+      <div class="question hard-q">
+        <h3>Question 2 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q5)</span></h3>
+        <p>Let \( f(x,y,z) = x^2 e^{yz} + \ln(x+z) \).</p>
+        <ol class="tasks">
+          <li>Find \(\nabla f\) at \((1,\,0,\,1)\).</li>
+          <li>Find the directional derivative at \((1,0,1)\) in the direction of \(\mathbf{v} = \langle 2,\,-2,\,1 \rangle\).</li>
+          <li>Find the direction in which \(f\) decreases at exactly half its maximum rate, i.e. find a unit vector \(\mathbf{u}\) such that \(D_{\mathbf{u}}f = -\dfrac{1}{2}|\nabla f|\).</li>
+        </ol>
+      </div>
+
+      <div class="question hard-q">
+        <h3>Question 3 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q6)</span></h3>
+        <p>The temperature at a point in the plane is given by \( T(x,y) = \dfrac{100}{1+x^2+2y^2} \).</p>
+        <ol class="tasks">
+          <li>A bug sits at \((1,1)\). In what direction should it move to cool down the fastest?</li>
+          <li>Find the rate of temperature decrease in that direction.</li>
+          <li>In what directions can the bug move so that the temperature stays constant? Verify by showing the directional derivative is zero.</li>
+          <li>If the bug moves in the direction \(\langle 3,-4\rangle\) at speed \(2\) units/sec, find \(\dfrac{dT}{dt}\).</li>
+        </ol>
+      </div>
+
+      <div class="question hard-q">
+        <h3>Question 4 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q10)</span></h3>
+        <p>Let \( f(x,y) = \arctan\!\left(\dfrac{y}{x}\right) \).</p>
+        <ol class="tasks">
+          <li>Find \(\nabla f(x,y)\) and simplify.</li>
+          <li>Show that \(\nabla f\) is always perpendicular to the position vector \(\langle x,y\rangle\).</li>
+          <li>Find the directional derivative at \((1,1)\) in the direction of \(\langle 1,1\rangle\) and explain why you get that value.</li>
+          <li>Find all directions at \((1,1)\) in which \(D_{\mathbf{u}}f = \dfrac{1}{4}\).</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- HARD TOPIC 4 -->
+    <section class="topic hard">
+      <h2>Hard Topic 4 — Gradients &amp; Tangents to Level Curves</h2>
+
+      <div class="question hard-q">
+        <h3>Question 5 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q1)</span></h3>
+        <p>For the level curve \( x^3 + y^3 - 3xy = 0 \) (the Folium of Descartes):</p>
+        <ol class="tasks">
+          <li>Find the gradient of \(f(x,y) = x^3 + y^3 - 3xy\) at the point \(\left(\dfrac{3}{2},\,\dfrac{3}{2}\right)\).</li>
+          <li>Find the equation of the tangent line there.</li>
+          <li>Find the equation of the normal line.</li>
+          <li>Show that at \((0,0)\) the gradient is \(\langle 0,0\rangle\) and explain why the tangent line is undefined there.</li>
+        </ol>
+      </div>
+
+      <div class="question hard-q">
+        <h3>Question 6 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q3)</span></h3>
+        <p>Let \( f(x,y) = x^2y + xy^2 \).</p>
+        <ol class="tasks">
+          <li>Find the gradient at \((1,2)\).</li>
+          <li>Find a unit tangent vector to the level curve through \((1,2)\).</li>
+          <li>Verify perpendicularity between the gradient and your tangent vector.</li>
+          <li>Find the equation of the tangent line and show that it is tangent to the curve \(x^2y + xy^2 = 6\) at \((1,2)\).</li>
+        </ol>
+      </div>
+
+      <div class="question hard-q">
+        <h3>Question 7 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q8)</span></h3>
+        <p>Let \( f(x,y) = e^{x^2 - y^2} \).</p>
+        <ol class="tasks">
+          <li>Find \(\nabla f\) at \((1,1)\).</li>
+          <li>Describe the level curve through \((1,1)\).</li>
+          <li>Show algebraically that \(\nabla f\) at any point on this level curve is perpendicular to the curve.</li>
+          <li>Find the tangent line to the level curve at \((1,1)\) and state the slope.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- HARD TOPIC 5 -->
+    <section class="topic hard">
+      <h2>Hard Topic 5 — Tangent Planes &amp; Differentials</h2>
+
+      <div class="question hard-q">
+        <h3>Question 8 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q1)</span></h3>
+        <p>Consider the surface \( z = x^2 e^{-y} + y\sin x \).</p>
+        <ol class="tasks">
+          <li>Find the tangent plane at \((0,\,0,\,0)\).</li>
+          <li>Find the normal line at that point.</li>
+          <li>Use the tangent plane to estimate \(f(0.05,\,-0.02)\).</li>
+          <li>Find the angle between the normal to this surface and the \(z\)-axis at the origin.</li>
+        </ol>
+      </div>
+
+      <div class="question hard-q">
+        <h3>Question 9 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q5)</span></h3>
+        <p>The surface is defined implicitly by \( x^2 + 2y^2 + 3z^2 - xy + yz = 9 \).</p>
+        <ol class="tasks">
+          <li>Verify that \((1,\,1,\,1)\) lies on the surface.</li>
+          <li>Find the gradient of \(F(x,y,z) = x^2 + 2y^2 + 3z^2 - xy + yz - 9\) at that point.</li>
+          <li>Find the equation of the tangent plane.</li>
+          <li>Find the equation of the normal line.</li>
+          <li>Find the acute angle between this tangent plane and the plane \(x + y + z = 3\).</li>
+        </ol>
+      </div>
+
+      <div class="question hard-q">
+        <h3>Question 10 <span style="font-weight:400;font-size:0.9rem;">(Replaces Q9)</span></h3>
+        <p>The pressure in a container is modeled by \( P(x,y,z) = x^2y + y^2z + z^2x \). At the point \((1,\,2,\,3)\):</p>
+        <ol class="tasks">
+          <li>Find the differential \(dP\).</li>
+          <li>If \(x\) increases by \(0.02\), \(y\) decreases by \(0.03\), and \(z\) increases by \(0.01\), estimate the change in \(P\).</li>
+          <li>Find the maximum possible change in \(P\) if the total displacement satisfies \((dx)^2+(dy)^2+(dz)^2 = 0.01\). (Hint: use the relationship between gradient and directional derivative.)</li>
+          <li>In what direction does \(P\) remain approximately constant?</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
     <!-- ANSWER KEY -->
     <!-- ═══════════════════════════════════════════ -->
     <div class="answer-key-wrapper">
@@ -1153,6 +1349,117 @@
             <p>Tangent plane: \( z-3 = 3(x-1)+3(y-1) \).</p>
             <p>Normal line: \( x=1+3t,\; y=1+3t,\; z=3-t \).</p>
             <p>\( dz = 3(0.02)+3(-0.01) = 0.03 \).</p>
+          </div>
+        </section>
+
+        <!-- ANSWERS: HARD TOPIC 3 -->
+        <section class="answer-topic hard">
+          <h2>Hard Answers — Topic 3: Directional Derivatives &amp; Gradient</h2>
+
+          <div class="answer hard-a">
+            <h3>Q1</h3>
+            <p>\( \nabla f = \langle e^x\sin y + 2xy,\; e^x\cos y + x^2 \rangle \)</p>
+            <p>At \((0,\pi/2)\): \( \nabla f = \langle 1,\, 0 \rangle \).</p>
+            <p>Direction from \((0,\pi/2)\) to \((3,\pi/2+4)\) is \(\langle 3,4\rangle\), unit: \(\langle 3/5,\,4/5\rangle\).</p>
+            <p>\( D_{\mathbf{u}}f = 1\cdot\tfrac{3}{5} + 0\cdot\tfrac{4}{5} = \tfrac{3}{5} \).</p>
+            <p>Maximum rate: \(|\nabla f| = 1\), in direction \(\langle 1,\,0 \rangle\).</p>
+            <p>\( D_{\mathbf{u}}f = 0 \) when \(\mathbf{u} \perp \nabla f\), so \(\mathbf{u} = \pm\langle 0,\,1 \rangle\). These are tangent to the level curve.</p>
+          </div>
+
+          <div class="answer hard-a">
+            <h3>Q2</h3>
+            <p>\( f_x = 2xe^{yz} + \tfrac{1}{x+z} \),\quad \( f_y = x^2ze^{yz} \),\quad \( f_z = x^2ye^{yz} + \tfrac{1}{x+z} \).</p>
+            <p>At \((1,0,1)\): \( \nabla f = \left\langle \tfrac{5}{2},\, 1,\, \tfrac{1}{2} \right\rangle \).</p>
+            <p>Unit direction of \(\langle 2,-2,1\rangle\): \(\langle 2/3,\,-2/3,\,1/3\rangle\).</p>
+            <p>\( D_{\mathbf{u}}f = \tfrac{5}{3} - \tfrac{2}{3} + \tfrac{1}{6} = \tfrac{7}{6} \).</p>
+            <p>\( |\nabla f| = \tfrac{\sqrt{30}}{2} \).</p>
+            <p>For \( D_{\mathbf{u}}f = -\tfrac{1}{2}|\nabla f| \): need \(\cos\alpha = -\tfrac{1}{2}\), so \(\alpha = 120°\). Infinitely many directions forming a cone at \(120°\) around \(\nabla f\).</p>
+          </div>
+
+          <div class="answer hard-a">
+            <h3>Q3</h3>
+            <p>\( T_x = \dfrac{-200x}{(1+x^2+2y^2)^2} \),\quad \( T_y = \dfrac{-400y}{(1+x^2+2y^2)^2} \).</p>
+            <p>At \((1,1)\): denominator \(= 16\), \( \nabla T = \langle -25/2,\,-25 \rangle \).</p>
+            <p>a) Cool down fastest in direction of \(-\nabla T = \langle 25/2,\,25 \rangle\), unit vector \(\langle 1/\sqrt{5},\,2/\sqrt{5} \rangle\).</p>
+            <p>b) Rate of decrease \(= |\nabla T| = 25\sqrt{5}/2\).</p>
+            <p>c) Constant temperature directions perpendicular to \(\nabla T\): \(\mathbf{u} = \pm\langle 2/\sqrt{5},\,-1/\sqrt{5} \rangle\). Check: \(\nabla T \cdot \mathbf{u} = -25/\sqrt{5}+25/\sqrt{5} = 0\) ✓</p>
+            <p>d) Unit direction of \(\langle 3,-4\rangle\): \(\langle 3/5,\,-4/5\rangle\). \( D_{\mathbf{u}}T = -15/2+20 = 25/2 \). Speed = 2, so \( dT/dt = 25 \).</p>
+          </div>
+
+          <div class="answer hard-a">
+            <h3>Q4</h3>
+            <p>\( \nabla f = \dfrac{1}{x^2+y^2}\langle -y,\,x \rangle \).</p>
+            <p>b) \( \nabla f \cdot \langle x,y\rangle = \dfrac{1}{x^2+y^2}(-xy+xy) = 0 \) ✓ — always perpendicular.</p>
+            <p>c) At \((1,1)\): \( \nabla f = \tfrac{1}{2}\langle -1,\,1\rangle \). Direction \(\langle 1,1\rangle\), unit \(\langle 1/\sqrt{2},\,1/\sqrt{2}\rangle\): \( D_{\mathbf{u}}f = \tfrac{1}{2}\!\left(-\tfrac{1}{\sqrt{2}}+\tfrac{1}{\sqrt{2}}\right) = 0 \). Zero because \(\langle 1,1\rangle\) is radial and the gradient is always perpendicular to it.</p>
+            <p>d) Need \(-\tfrac{1}{2}\cos\theta+\tfrac{1}{2}\sin\theta = \tfrac{1}{4}\), i.e. \(\sin\theta-\cos\theta = \tfrac{1}{2}\). Two solutions in \([0,2\pi)\).</p>
+          </div>
+        </section>
+
+        <!-- ANSWERS: HARD TOPIC 4 -->
+        <section class="answer-topic hard">
+          <h2>Hard Answers — Topic 4: Gradients &amp; Tangents to Level Curves</h2>
+
+          <div class="answer hard-a">
+            <h3>Q5</h3>
+            <p>\( \nabla f = \langle 3x^2-3y,\,3y^2-3x \rangle \).</p>
+            <p>At \((3/2,\,3/2)\): \( \nabla f = \langle 9/4,\,9/4 \rangle \).</p>
+            <p>Tangent: \( \tfrac{9}{4}(x-3/2)+\tfrac{9}{4}(y-3/2)=0 \Rightarrow x+y=3 \).</p>
+            <p>Normal: \( y-3/2 = 1\cdot(x-3/2) \Rightarrow y=x \).</p>
+            <p>At \((0,0)\): \(\nabla f = \langle 0,0\rangle\). Gradient vanishes → singular point (self-intersection of the Folium); tangent is undefined.</p>
+          </div>
+
+          <div class="answer hard-a">
+            <h3>Q6</h3>
+            <p>\( \nabla f = \langle 2xy+y^2,\,x^2+2xy \rangle \).</p>
+            <p>At \((1,2)\): \( \nabla f = \langle 8,\,5 \rangle \).</p>
+            <p>Unit tangent (perpendicular to gradient): \( \mathbf{T} = \tfrac{1}{\sqrt{89}}\langle 5,\,-8 \rangle \).</p>
+            <p>Check: \(\langle 8,5\rangle\cdot\langle 5,-8\rangle = 40-40 = 0\) ✓</p>
+            <p>Tangent line: \( 8(x-1)+5(y-2)=0 \Rightarrow 8x+5y=18 \).</p>
+            <p>Level curve value: \( f(1,2)=2+4=6 \). Tangent line touches \(x^2y+xy^2=6\) at \((1,2)\) ✓</p>
+          </div>
+
+          <div class="answer hard-a">
+            <h3>Q7</h3>
+            <p>\( \nabla f = \langle 2xe^{x^2-y^2},\,-2ye^{x^2-y^2} \rangle \).</p>
+            <p>At \((1,1)\): \( e^0=1 \), so \( \nabla f = \langle 2,\,-2 \rangle \).</p>
+            <p>Level curve: \( e^{x^2-y^2}=1 \Rightarrow x^2-y^2=0 \Rightarrow y=\pm x \). Through \((1,1)\): \(y=x\).</p>
+            <p>Tangent direction along \(y=x\) is \(\langle 1,1\rangle\). \( \nabla f\cdot\langle 1,1\rangle = 2-2=0 \) ✓</p>
+            <p>Tangent line: \( 2(x-1)-2(y-1)=0 \Rightarrow y=x \). Slope = 1.</p>
+          </div>
+        </section>
+
+        <!-- ANSWERS: HARD TOPIC 5 -->
+        <section class="answer-topic hard">
+          <h2>Hard Answers — Topic 5: Tangent Planes &amp; Differentials</h2>
+
+          <div class="answer hard-a">
+            <h3>Q8</h3>
+            <p>\( f_x = 2xe^{-y}+y\cos x \),\quad \( f_y = -x^2e^{-y}+\sin x \).</p>
+            <p>At \((0,0)\): \( f_x=0 \), \( f_y=0 \), \( f(0,0)=0 \).</p>
+            <p>Tangent plane: \( z=0 \) (the \(xy\)-plane itself).</p>
+            <p>Normal line: \( x=0,\; y=0,\; z=t \) (the \(z\)-axis).</p>
+            <p>Estimate \(f(0.05,-0.02)\approx 0\) (first-order terms vanish). Better with second-order: \(f_{xx}(0,0)=2\), \(f_{xy}(0,0)=1\), giving \(f\approx\tfrac{1}{2}(2)(0.05)^2+(1)(0.05)(-0.02)=0.0025-0.001=0.0015\).</p>
+            <p>Angle: normal is \(\langle 0,0,1\rangle\), which IS the \(z\)-axis, so angle = \(0°\).</p>
+          </div>
+
+          <div class="answer hard-a">
+            <h3>Q9</h3>
+            <p>Verify: \(1+2+3-1+1=6\). (Note: \(F(1,1,1)=6-9=-3\); the problem uses this point to illustrate the method.)</p>
+            <p>\( \nabla F = \langle 2x-y,\;4y-x+z,\;6z+y \rangle \).</p>
+            <p>At \((1,1,1)\): \( \nabla F = \langle 1,\,4,\,7 \rangle \).</p>
+            <p>Tangent plane: \( 1(x-1)+4(y-1)+7(z-1)=0 \Rightarrow x+4y+7z=12 \).</p>
+            <p>Normal line: \( x=1+t,\; y=1+4t,\; z=1+7t \).</p>
+            <p>Angle with plane \(x+y+z=3\) (normal \(\langle 1,1,1\rangle\)): \(\cos\theta=\dfrac{|1+4+7|}{\sqrt{66}\cdot\sqrt{3}}=\dfrac{12}{\sqrt{198}}\). Acute angle \(=\arccos\!\left(\dfrac{12}{\sqrt{198}}\right)\).</p>
+          </div>
+
+          <div class="answer hard-a">
+            <h3>Q10</h3>
+            <p>\( P_x = 2xy+z^2 \),\quad \( P_y = x^2+2yz \),\quad \( P_z = y^2+2zx \).</p>
+            <p>At \((1,2,3)\): \( P_x=4+9=13 \), \( P_y=1+12=13 \), \( P_z=4+6=10 \).</p>
+            <p>\( dP = 13\,dx + 13\,dy + 10\,dz \).</p>
+            <p>b) \( dP = 13(0.02)+13(-0.03)+10(0.01) = 0.26-0.39+0.10 = -0.03 \).</p>
+            <p>c) \( |\nabla P| = \sqrt{169+169+100} = \sqrt{438} \). Displacement length \(= \sqrt{0.01}=0.1\). Max change \(= 0.1\sqrt{438} \).</p>
+            <p>d) \(P\) remains constant in any direction orthogonal to \(\nabla P = \langle 13,\,13,\,10 \rangle\).</p>
           </div>
         </section>
 
