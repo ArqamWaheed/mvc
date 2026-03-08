@@ -635,7 +635,7 @@
       </div>
     </section>
 
-    <!-- ════════���══════════════════════════════════ -->
+    <!-- ═══════════════════════════════════════════ -->
     <!-- TOPIC 5 -->
     <!-- ═══════════════════════════════════════════ -->
     <section class="topic">
@@ -1098,4 +1098,78 @@
           <div class="answer">
             <h3>Q4</h3>
             <p>At \((3,1)\): \( f_x = f_y = \frac{1}{4} \).</p>
-            <p>Tangent plane: \( z-2 = \frac
+            <p>Tangent plane: \( z-2 = \frac{1}{4}(x-3)+\frac{1}{4}(y-1) \).</p>
+            <p>Normal line uses direction \(\left\langle\frac{1}{4},\frac{1}{4},-1\right\rangle\).</p>
+            <p>Estimate: \( z \approx 2+\frac{1}{4}(0.04)+\frac{1}{4}(-0.02) = 2.005 \).</p>
+          </div>
+
+          <div class="answer">
+            <h3>Q5</h3>
+            <p>\( \nabla F = \langle 2x,\;2y,\;2z\rangle \).</p>
+            <p>At \((1,2,2)\): \(\langle 2,4,4\rangle\).</p>
+            <p>Tangent plane: \( 2(x-1)+4(y-2)+4(z-2)=0 \).</p>
+            <p>Normal line: \( x=1+2t,\; y=2+4t,\; z=2+4t \).</p>
+            <p>The gradient is normal because it is perpendicular to level surfaces.</p>
+          </div>
+
+          <div class="answer">
+            <h3>Q6</h3>
+            <p>\( f(1,1)=4,\; f_x=2x,\; f_y=6y \).</p>
+            <p>At \((1,1)\): \( f_x=2,\; f_y=6 \).</p>
+            <p>Linearization: \( L(x,y)=4+2(x-1)+6(y-1) \).</p>
+            <p>Estimate: \( f(1.03,0.98) \approx 4+2(0.03)+6(-0.02) = 3.94 \).</p>
+            <p>\( df = 2x\,dx + 6y\,dy \).</p>
+          </div>
+
+          <div class="answer">
+            <h3>Q7</h3>
+            <p>\( f_x = e^{x-y},\; f_y = -e^{x-y} \).</p>
+            <p>At \((0,0)\): \( f_x=1,\; f_y=-1 \).</p>
+            <p>Tangent plane: \( z-1 = x-y \).</p>
+            <p>Normal line: \( x=t,\; y=-t,\; z=1-t \).</p>
+            <p>Estimate at \((0.02,-0.01)\): \( z \approx 1+0.02+0.01 = 1.03 \).</p>
+          </div>
+
+          <div class="answer">
+            <h3>Q8</h3>
+            <p>\( f_x = f_y = \frac{1}{x+y} \).</p>
+            <p>At \((1,1)\): \( f_x = f_y = \frac{1}{2} \).</p>
+            <p>Tangent plane: \( z-\ln 2 = \frac{1}{2}(x-1)+\frac{1}{2}(y-1) \).</p>
+            <p>\( dz = \frac{1}{x+y}\,dx + \frac{1}{x+y}\,dy \).</p>
+            <p>At \((1,1)\) with \(dx=0.03,\;dy=-0.01\): \( dz = \frac{1}{2}(0.02) = 0.01 \).</p>
+          </div>
+
+          <div class="answer">
+            <h3>Q9</h3>
+            <p>\( dV = yz\,dx + xz\,dy + xy\,dz \).</p>
+            <p>At \((2,3,4)\): \( dV = 12(0.01)+8(-0.02)+6(0.03) = 0.12-0.16+0.18 = 0.14 \).</p>
+            <p>Approximate change in volume.</p>
+          </div>
+
+          <div class="answer">
+            <h3>Q10</h3>
+            <p>\( f_x = 2x+y,\; f_y = x+2y \).</p>
+            <p>At \((1,1)\): \( f_x=3,\; f_y=3 \).</p>
+            <p>Tangent plane: \( z-3 = 3(x-1)+3(y-1) \).</p>
+            <p>Normal line: \( x=1+3t,\; y=1+3t,\; z=3-t \).</p>
+            <p>\( dz = 3(0.02)+3(-0.01) = 0.03 \).</p>
+          </div>
+        </section>
+
+      </div><!-- /.answer-key -->
+    </div><!-- /.answer-key-wrapper -->
+
+  </div><!-- /.container -->
+
+  <footer>
+    <p>Calculus III Practice Set &bull; Thomas' Calculus 14th Ed.</p>
+  </footer>
+
+  <script>
+    function toggleAnswers() {
+      const key = document.getElementById('answerKey');
+      key.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
